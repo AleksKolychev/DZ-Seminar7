@@ -22,7 +22,7 @@ void PrintMatrix(double[,] matrix)
 
 Console.Clear();
 Console.Write("Введите размер массива: ");
-int[] size = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+int[] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
 double[,] matrix = new double[size[0], size[1]];
 InputMatrix(matrix);
 PrintMatrix(matrix);
